@@ -1,0 +1,118 @@
+body {
+  background-color: #0000;
+  font-family: sana-serif;
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/* } */
+
+}
+body{
+  min-height: 100vh ;
+  background: url('./Componenets/6.jpg') no-repeat center;
+  background-size: 100% 100%;
+  color: white
+}
+section{
+color :#fff;
+padding: 1.5em;
+padding-top: 600px
+}
+p{
+ max-width: 35em ;
+ padding: 1em 0;
+  
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style:none;
+}
+.navbar{
+  width: 100%;
+  padding: 1.5em;
+color: #fff;
+transition: 0.3s ease-in-out;
+z-index: 2;
+/* background-color: rgb(0, 183, 255) !important; */
+}
+.navbar.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+
+}
+.navbar a:hover{
+  color: #b2b2b2;
+
+}
+.brand{
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  transition: 0.45 ease-out;
+}
+.menu-btn{
+  cursor: pointer;
+  font-size: 1.3em;
+  display: none;
+  transition: 0.3s;
+
+}
+.menu-btn :hover{
+  color: #b2b2b2;
+}
+.navbar-active{
+  position: fixed;
+  background: #111;
+
+}
+@media screen and(max-width:800px){
+  .menu-btn{
+    display: block;
+  }
+  .menu{
+    position: absolute;
+    top: 4.7em;
+    left: 0;
+    width: 100%;
+    height: 0em;
+    background: #222;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+
+.navbar .menu-open{
+  height: 18em ;
+
+}
+}
+  
+ 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+

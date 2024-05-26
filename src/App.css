@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.clock {
+  
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: -25em;
+  height:-10em;
+/* background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(173, 40, 190) 35%, rgb(7, 1, 2) 100%); */
+border-radius: 20px;
+  
+   
+}
+.clock h1{
+font-family: 'orbitron',sans-serif ;
+font-size: 5em;
+font-weight: 500;
+color:black;
+text-align: end;
+justify-content: end;
+margin-top: 50px;
+}
+
+.screen{
+width: 25em ;
+height: 10em ;
+/* border:5px solid black; */
+border-radius: 15px;
+
+}
+/* this is form calculator */
+.cantainer{
+  width: 100%;
+  display: none;
+}
+
+.form{
+  width: 100%;
+}
+.nav>ul{
+  padding: 10px;
+  display: inline;
+  margin: 5px;
+}
+li{
+  display: inline;
+  border: groove black 1px;
+  margin: 5px;
+  border-radius: 5px;
+
+}
+  .navLink:hover{
+  will-change: contents;
+  /* background-color: rebeccapurple; */
+  color: black;
+  font-size: 25px;
+  border-radius: 10px;  
+  /* border: 10px groove white; */
+
+}
+.name {
+  color: white;
+}
+
+/* my style  Gallery*/
+
+
+body{
+  margin: 20px;
+  padding: 0;
+  background-color: black;
+}
+.gallery{
+  max-width: -90%;
+  margin: auto;
+  border: #fff solid 3px;
+  background-color:black;
+  height: 100vh;
+  background-size: 100vh;
+  
+}
+.gallery img{ 
+  width: 100%;
+  height: 500px; 
+}
+
+.gallery .thumbnails img {
+  height: 170px;
+}
+.gallery .main-img img {width: 100%; height: -90;}
+
+
+.gallery .thumbnails{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:5px ;
+}
+.gallery .thumbnails img{
+  width: 100%;
+  cursor: pointer;
+}
+
